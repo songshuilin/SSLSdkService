@@ -4,7 +4,7 @@ package com.sslsdk.platform.exception;
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/03--09:24
+ * @CreateTime 2019/04/03--09:24
  */
 public class BaseException extends  Exception{
     private int code;

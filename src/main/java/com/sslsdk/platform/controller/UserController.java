@@ -7,16 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import java.sql.Date;
 import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/03--10:18
+ * @CreateTime 2019/04/03--10:18
  */
 @RestController
 @RequestMapping("/user")
@@ -32,7 +30,6 @@ public class UserController {
         user.setChid(123);
         user.setGid(1234);
         user.setMid("mid");
-        user.setMidRegTime(new Date(date.getTime()));
         user.setUpdateTime(new Timestamp(date.getTime()));
         user.setUsernname("老五");
         user.setRegTime(new Timestamp(date.getTime()));

@@ -4,7 +4,7 @@ package com.sslsdk.platform.exception;
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/02--21:24
+ * @CreateTime 2019/04/02--21:24
  */
 public class ControllerException extends RuntimeException {
     private  String code;

@@ -4,44 +4,44 @@ package com.sslsdk.platform.domain;
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/02--20:56
+ * @CreateTime 2019/04/02--20:56
  */
 public class ResponseBean {
-    private int code;// 状态码
+    private int errno;// 状态码
 
-    private  String msg;//返回的信息
+    private  String error;//返回的信息
 
     private Object data;// 返回的数据
 
-    public ResponseBean(int code, String msg, Object data) {
-        this.code = code;
-        this.msg = msg;
+    public ResponseBean(int errno, String error, Object data) {
+        this.errno = errno;
+        this.error = error;
         this.data = data;
     }
 
     @Override
     public String toString() {
         return "ResponseBean{" +
-                "code=" + code +
-                ", msg='" + msg + '\'' +
+                "errno=" + errno +
+                ", error='" + error + '\'' +
                 ", data=" + data +
                 '}';
     }
 
-    public int getCode() {
-        return code;
+    public int getErrno() {
+        return errno;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setErrno(int errno) {
+        this.errno = errno;
     }
 
-    public String getMsg() {
-        return msg;
+    public String getError() {
+        return error;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setError(String error) {
+        this.error = error;
     }
 
     public Object getData() {

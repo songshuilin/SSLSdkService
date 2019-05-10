@@ -1,5 +1,6 @@
 package com.sslsdk.platform.server.serviceImpl;
 
+import com.sslsdk.platform.constant.Constants;
 import com.sslsdk.platform.domain.User;
 import com.sslsdk.platform.dao.UserMapper;
 import com.sslsdk.platform.exception.ControllerException;
@@ -13,7 +14,7 @@ import java.util.List;
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/03--09:38
+ * @CreateTime 2019/04/03--09:38
  */
 @Service
 public class UserServiceImpl implements UserServer {
@@ -26,7 +27,7 @@ public class UserServiceImpl implements UserServer {
         try {
             return userMapper.add(user);
         }catch (Exception ex){
-           throw new ControllerException("100","添加用户失败");
+           throw new ControllerException(Constants.ADD_FAILURE,"添加用户失败");
         }
     }
 
@@ -35,7 +36,7 @@ public class UserServiceImpl implements UserServer {
         try {
             return userMapper.deleteUserById(uid);
         }catch (Exception ex){
-            throw  new ControllerException("101","删除用户失败");
+            throw  new ControllerException(Constants.DELETE_FAILURE,"删除用户失败");
         }
     }
 
@@ -44,7 +45,7 @@ public class UserServiceImpl implements UserServer {
         try {
             return userMapper.findUserAll();
         }catch (Exception ex){
-           throw  new ControllerException("102","查询用户失败");
+           throw  new ControllerException(Constants.FIND_FAILURE,"查询用户失败");
         }
     }
 }

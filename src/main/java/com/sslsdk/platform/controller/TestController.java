@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/03--09:18
+ * @CreateTime 2019/04/03--09:18
  */
 @RestController
 public class TestController {

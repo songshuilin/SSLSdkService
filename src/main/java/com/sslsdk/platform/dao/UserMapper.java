@@ -12,7 +12,7 @@ import java.util.List;
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/03--08:18
+ * @CreateTime 2019/04/03--08:18
  */
 @Mapper
 public interface UserMapper {

@@ -5,7 +5,7 @@ package com.sslsdk.platform.domain;
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/03--09:20
+ * @CreateTime 2019/04/03--09:20
  */
 public class User {
 
@@ -15,7 +15,6 @@ public class User {
   private long gid;//游戏id
   private long chid;//渠道id
   private java.sql.Timestamp updateTime;//添加时间
-  private java.sql.Date midRegTime;
   private java.sql.Timestamp regTime;//注册时间
 
 
@@ -72,16 +71,6 @@ public class User {
     this.updateTime = updateTime;
   }
 
-
-  public java.sql.Date getMidRegTime() {
-    return midRegTime;
-  }
-
-  public void setMidRegTime(java.sql.Date midRegTime) {
-    this.midRegTime = midRegTime;
-  }
-
-
   public java.sql.Timestamp getRegTime() {
     return regTime;
   }
@@ -99,7 +88,6 @@ public class User {
             ", gid=" + gid +
             ", chid=" + chid +
             ", updateTime=" + updateTime +
-            ", midRegTime=" + midRegTime +
             ", regTime=" + regTime +
             '}';
   }

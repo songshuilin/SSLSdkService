@@ -10,7 +10,7 @@ import java.util.Map;
  * @program
  * @Desc
  * @Author 游戏人日常
- * @CreatrTime 2019/04/03--09:18
+ * @CreateTime 2019/04/03--09:18
  */
 @ControllerAdvice
 public class MyControllerAdvice {
@@ -34,8 +34,8 @@ public class MyControllerAdvice {
     @ExceptionHandler(value = Exception.class)
     public Map errorHandler(Exception ex){
         Map map=new HashMap();
-        map.put("code",100);
-        map.put("msg",ex.getMessage());
+        map.put("errno",100);
+        map.put("error",ex.getMessage());
         return  map;
     }
 
@@ -48,8 +48,8 @@ public class MyControllerAdvice {
     @ExceptionHandler(value = ControllerException.class)
     public Map myErrorHandler(ControllerException ex){
         Map map=new HashMap();
-        map.put("code",ex.getCode());
-        map.put("msg",ex.getMsg());
+        map.put("errno",ex.getCode());
+        map.put("error",ex.getMsg());
         return  map;
     }
 }
